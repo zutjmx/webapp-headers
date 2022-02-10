@@ -1,4 +1,4 @@
-package org.zutjmx.apiservlet.webapp.headers;
+package org.zutjmx.apiservlet.webapp.headers.controllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -62,6 +62,7 @@ public class CabecerasHttpRequestServlet extends HttpServlet {
             }
 
             out.println("      </ul>");
+            out.println("      <p><a href=\"" + req.getContextPath() + "\">Regresar</a></p>");
             out.println("  </body>");
             out.println("</html>");
         }
